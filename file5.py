@@ -26,8 +26,8 @@
 # print(person.keys())
 # print(person.values())
 
-# #______________________________________________
 
+# #______________________________________________
 
 # #exercise
 
@@ -63,6 +63,64 @@
 #     start +=1
 #     end -=1
 # print(lst)
+#hackeran
+# #______________________________________________
+#occurance of a element in list
+# occs={
+
+# } #creating a null dictionary
+# for i in arr:
+#     if(i in occs):
+#         occs[i]+=1 #if already exists then the count will increase
+#     else:
+#         occs[i]=1 #if not exist then the item will be inserted in the dictionary and count will be done
+# print(occs)
+
+# arr=[1,1,1,1,1,1,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,1,2,3,4,5]
+
+# #find the largest element in list
+# #either this way
+# # for i in arr:
+# #     if(i>largest):
+# #         largest=i
+# # print(largest)
+# #oR this way
+# for i in range(0,len(arr)):
+#     if(arr[i]>largest):
+#         largest=arr[i]
+# print(largest)
+
+arr2=[10,45,32,56,78,12,34]
+# largest=0
+# secondLargest=-1
+# for i in arr:
+#     if(i>secondLargest):
+#         secondLargest=i
+#     if(secondLargest>largest):
+#         secondLargest, largest = largest, secondLargest
+# print(secondLargest)
+
+#trying own
+# for i in arr:
+#     if(i>largest):
+#          largest=i
+#          if(secondLargest>i && secondLargest<largest):
+#              secondLargest
+
+#using function 
+    
+def secLargest(arr):
+    largest=0
+    secondLargest=-1
+    for i in arr:
+        if(i>secondLargest):
+            secondLargest=i
+        if(secondLargest>largest):
+            secondLargest, largest = largest, secondLargest
+    print(secondLargest)
+
+
+secLargest(arr2)
 
 
 
